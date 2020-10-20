@@ -1,0 +1,16 @@
+﻿<Window x:Class="PaySplit.Wpf.AddModifyPersonWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="AddPersonWindow" Height="450" Width="800">
+    <StackPanel>
+        <Label Content="Name"></Label>
+        <TextBox x:Name="NameTextBox"></TextBox>
+        <Label Content="Money"></Label>
+        <TextBox x:Name="MoneyTextBox"></TextBox>
+        <Button x:Name="AddButton" Content="Add" Click="AddButton_Click" ></Button>
+        <Button x:Name="ModifyButton" Content="Modify" Click="ModifyButton_Click" ></Button>
+    </StackPanel>
+</Window>

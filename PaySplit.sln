@@ -9,6 +9,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaySplit.Abstractions", "Pa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaySplit.Tests", "PaySplit.Tests\PaySplit.Tests.csproj", "{ADBE2632-0F69-4399-9F5C-ECAAF7A5E09B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaySplit.Wpf", "PaySplit.Wpf\PaySplit.Wpf.csproj", "{38FE0A78-E91E-4624-AA51-68B393C0DA59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaySplit.DAL", "PaySplit.DAL\PaySplit.DAL.csproj", "{BA5D7B04-B847-486E-A57B-2D873034A1C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaySplit.DAL.Sqlite", "PaySplit.DAL.Sqlite\PaySplit.DAL.Sqlite.csproj", "{F66F7A10-1185-485A-8131-AEDDC6F36DF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaySplit.DAL.Models", "PaySplit.DAL.Models\PaySplit.DAL.Models.csproj", "{CC898C49-A0A1-46B3-89AC-389CE84113A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +35,22 @@ Global
 		{ADBE2632-0F69-4399-9F5C-ECAAF7A5E09B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADBE2632-0F69-4399-9F5C-ECAAF7A5E09B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADBE2632-0F69-4399-9F5C-ECAAF7A5E09B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38FE0A78-E91E-4624-AA51-68B393C0DA59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38FE0A78-E91E-4624-AA51-68B393C0DA59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38FE0A78-E91E-4624-AA51-68B393C0DA59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38FE0A78-E91E-4624-AA51-68B393C0DA59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA5D7B04-B847-486E-A57B-2D873034A1C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA5D7B04-B847-486E-A57B-2D873034A1C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA5D7B04-B847-486E-A57B-2D873034A1C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA5D7B04-B847-486E-A57B-2D873034A1C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F66F7A10-1185-485A-8131-AEDDC6F36DF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F66F7A10-1185-485A-8131-AEDDC6F36DF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F66F7A10-1185-485A-8131-AEDDC6F36DF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F66F7A10-1185-485A-8131-AEDDC6F36DF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC898C49-A0A1-46B3-89AC-389CE84113A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC898C49-A0A1-46B3-89AC-389CE84113A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC898C49-A0A1-46B3-89AC-389CE84113A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC898C49-A0A1-46B3-89AC-389CE84113A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
