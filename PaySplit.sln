@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaySplit", "PaySplit\PaySplit.csproj", "{9EACF6B1-97BC-4B06-B5CC-6E922C331008}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaySplit.Abstractions", "PaySplit.Abstractions\PaySplit.Abstractions.csproj", "{EF7E610F-30E8-4508-A14E-47EF784F2E59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaySplit.Tests", "PaySplit.Tests\PaySplit.Tests.csproj", "{ADBE2632-0F69-4399-9F5C-ECAAF7A5E09B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EACF6B1-97BC-4B06-B5CC-6E922C331008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EACF6B1-97BC-4B06-B5CC-6E922C331008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EACF6B1-97BC-4B06-B5CC-6E922C331008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EACF6B1-97BC-4B06-B5CC-6E922C331008}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF7E610F-30E8-4508-A14E-47EF784F2E59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF7E610F-30E8-4508-A14E-47EF784F2E59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF7E610F-30E8-4508-A14E-47EF784F2E59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF7E610F-30E8-4508-A14E-47EF784F2E59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADBE2632-0F69-4399-9F5C-ECAAF7A5E09B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADBE2632-0F69-4399-9F5C-ECAAF7A5E09B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADBE2632-0F69-4399-9F5C-ECAAF7A5E09B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADBE2632-0F69-4399-9F5C-ECAAF7A5E09B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00A899A4-ECB0-4115-906D-B5E9AEDE866B}
+	EndGlobalSection
+EndGlobal
