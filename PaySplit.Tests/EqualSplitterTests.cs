@@ -21,7 +21,7 @@ namespace PaySplit.Tests
             var person2 = new Person();
             var es = new EqualSplitter(new PaySourcesProvider(person1, person2));
 
-            var results = es.Split(new Payment(amount)).ToList();
+            var results = es.Split(new ImmutablePayment(amount)).ToList();
 
             var person1CalculatedPayment = results.Find(p => p.PaySource == person1);
             var person2CalculatedPayment = results.Find(p => p.PaySource == person2);

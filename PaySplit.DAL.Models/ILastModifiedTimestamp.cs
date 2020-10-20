@@ -4,6 +4,6 @@ namespace PaySplit.DAL.Models
 {
     public interface ILastModifiedTimestamp
     {
-        DateTimeOffset LastModified { get; set; }
+        DateTimeOffset Modified { get; set; }
     }
 }

@@ -6,9 +6,27 @@
         mc:Ignorable="d"
         Title="SplitPayWindow" Height="450" Width="800">
     <StackPanel>
-        <Label Content="Amount" Margin="0 1 0 1"></Label>
-        <TextBox x:Name="MoneyTextBox" Margin="0 1 0 1"></TextBox>
-        <Button Margin="0 1 0 1" x:Name="CalculateButton" Content="Calculate" Click="CalculateButton_Click"></Button>
-        <DataGrid x:Name="ResultsDataGrid"></DataGrid>
+        <Label Content="Amount" Margin="0 1 0 1" />
+        <TextBox x:Name="MoneyTextBox" Margin="0 1 0 1" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <RadioButton x:Name="EqualSplit" Content="Equally" Grid.Column="0" IsChecked="True" Checked="SplitMode_OnChecked" GroupName="SplitType" />
+            <RadioButton x:Name="ProportionalSplit" Content="Proportional" Grid.Column="1" Checked="SplitMode_OnChecked" GroupName="SplitType" />
+            <Grid  Grid.Column="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <RadioButton x:Name="AllForOne" Content="All" Grid.Column="0" Checked="SplitMode_OnChecked" GroupName="SplitType"/>
+                <TextBox x:Name="AllForOneName" Grid.Column="1" IsEnabled="False"></TextBox>
+            </Grid>
+        </Grid>
+        <Button Margin="0 1 0 1" x:Name="CalculateButton" Content="Calculate" Click="CalculateButton_Click" />
+        <DataGrid x:Name="ResultsDataGrid" />
+        <Button x:Name="SaveButton" Content="Save" IsEnabled="False" Visibility="Collapsed" Click="SaveButton_Click"/>
     </StackPanel>
 </Window>

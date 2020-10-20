@@ -4,7 +4,7 @@ namespace PaySplit.Abstractions.Payment
     {
         public static IPayment AsPayment(this decimal @this)
         {
-            return new Payment(@this);
+            return new ImmutablePayment(@this);
         }
     }
 }

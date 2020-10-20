@@ -6,19 +6,6 @@ using Xunit;
 
 namespace PaySplit.Tests
 {
-    public class PaymentExtTests
-    {
-        [Fact]
-        public void ShouldParsePaymentFromDecimal()
-        {
-            var dec = 12.3m;
-
-            var result = dec.AsPayment();
-
-            Assert.Equal(dec, result.Amount);
-        }
-    }
-
     public class ProportionalSplitterTests
     {
         [Fact]
@@ -31,7 +18,7 @@ namespace PaySplit.Tests
             var person2 = new Person(){Funds = 400};
             var es = new ProportionalSplitter(new PaySourcesProvider(person1, person2));
 
-            var results = es.Split(new Payment(amount)).ToList();
+            var results = es.Split(new ImmutablePayment(amount)).ToList();
 
             var person1CalculatedPayment = results.Find(p => p.PaySource == person1);
             var person2CalculatedPayment = results.Find(p => p.PaySource == person2);
@@ -50,7 +37,7 @@ namespace PaySplit.Tests
             var person2 = new Person() { Funds = 0 };
             var es = new ProportionalSplitter(new PaySourcesProvider(person1, person2));
 
-            var results = es.Split(new Payment(amount)).ToList();
+            var results = es.Split(new ImmutablePayment(amount)).ToList();
 
             var person1CalculatedPayment = results.Find(p => p.PaySource == person1);
             var person2CalculatedPayment = results.Find(p => p.PaySource == person2);

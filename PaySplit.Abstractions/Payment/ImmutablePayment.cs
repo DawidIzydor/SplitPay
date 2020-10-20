@@ -1,8 +1,8 @@
 namespace PaySplit.Abstractions.Payment
 {
-    public class Payment : IPayment
+    public class ImmutablePayment : IPayment
     {
-        public Payment(decimal amount)
+        public ImmutablePayment(decimal amount)
         {
             Amount = amount;
         }

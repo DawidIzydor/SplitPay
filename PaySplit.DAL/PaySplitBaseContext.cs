@@ -20,6 +20,10 @@ namespace PaySplit.DAL
 
         public DbSet<DbPerson> Persons { get; set; }
 
+        public DbSet<DbPayment> Payments { get; set; }
+
+        public DbSet<PaymentElement> PaymentElements { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -122,13 +126,14 @@ namespace PaySplit.DAL
             {
                 if ((entityEntry.State == EntityState.Modified || entityEntry.State == EntityState.Added) && entityEntry
                     .Entity.GetType().GetProperties()
-                    .Any(p => p.Name == nameof(ILastModifiedTimestamp.LastModified)))
+                    .Any(p => p.Name == nameof(ILastModifiedTimestamp.Modified)))
                 {
-                    entityEntry.CurrentValues[nameof(ILastModifiedTimestamp.LastModified)] = DateTimeOffset.Now;
+                    entityEntry.CurrentValues[nameof(ILastModifiedTimestamp.Modified)] = DateTimeOffset.Now;
                 }
             }
         }
 
         #endregion
     }
+
 }
