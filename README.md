@@ -1,3 +1,4 @@
+![.NET Core](https://github.com/DawidIzydor/SplitPay/workflows/.NET%20Core/badge.svg?branch=master)
 # SplitPay
 Mechanism for splitting payments
 
