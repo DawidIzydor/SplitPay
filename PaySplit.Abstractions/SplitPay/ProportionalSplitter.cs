@@ -22,9 +22,18 @@ namespace PaySplit.Abstractions.SplitPay
 
             foreach (var paySource in paySources)
             {
-                yield return new SplitPaymentItem(paySource, payment.Amount * paySource.Funds/fundsSum);
+                yield return new SplitPaymentItem(paySource, payment.Amount * CalculateSplitPercentage(paySource.Funds, fundsSum));
+            }
+        }
+
+        private static decimal CalculateSplitPercentage(decimal oneFunds, decimal fundsSum)
+        {
+            if (fundsSum == 0)
+            {
+                return 0.5m;
             }
 
+            return oneFunds / fundsSum;
         }
     }
 }
